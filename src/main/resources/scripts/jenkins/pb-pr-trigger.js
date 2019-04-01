@@ -14,7 +14,7 @@ define('jenkins/parameterized-build-pullrequest', [
     flag
 ) {
     var allJobs;
-    var urlRegex = /(.+?)\/projects\/[\w_ -]+?\/repos\/[\w_ -]+?\/.*/
+    var urlRegex = /(.+?)\/projects\/[\w._ -]+?\/repos\/[\w._ -]+?\/.*/
     var urlParts = window.location.href.match(urlRegex);
 
     $(".parameterized-build-pullrequest").click(function() {
